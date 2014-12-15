@@ -7,7 +7,7 @@ module Lita
         end
       end
 
-      route(/^hangouts!/i, :new_hangout, help: {
+      route(/^(new|)\s*hangouts?\s*$/i, :new_hangout, help: {
         "hangouts!" => "Creates a new Google hangout and pastes the link in the room."
       })
 
